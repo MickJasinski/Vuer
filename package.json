@@ -1,0 +1,23 @@
+{
+  "name": "vuer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss   css/main.css --output-style compressed",
+    "watch-css": "nodemon -e sass -x \"npm run build-css\"",
+    "start": "npm run watch-css"
+  },
+  "keywords": [],
+  "author": {
+    "name": "micky.click",
+    "url": "http://micky.click"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "sass-autoprefixer": "^1.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

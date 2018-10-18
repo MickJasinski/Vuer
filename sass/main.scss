@@ -1,0 +1,41 @@
+$red: #ff3700;
+
+.showreel {
+    .showreel-box {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        img {
+            display: block;
+            margin-bottom: 30px;
+        }
+        .showreel-screen {
+            height: 30vw;
+            margin-bottom: 30px;
+        }
+        .showreel-thumbnail {
+            img {
+                width: 100%;
+                object-fit: contain;
+                transition: .3s;
+                cursor: pointer;
+                padding-bottom: 5px;
+                border-bottom: 5px solid rgba(0,0,0,0);
+            }
+            img:hover{
+                opacity: .8;
+            }
+            .selected {
+                border-bottom: 5px solid $red;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 575px) {
+    .showreel {
+        .showreel-box {
+            padding: 0 15px;
+        }
+    }   
+}
